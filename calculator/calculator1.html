@@ -6,6 +6,9 @@
     <style>
         .container{
             display: grid;
+            background-color:#e9e9e9 ;
+            margin-left: 95px;
+            margin-right: 600px;
         }
         .grid-container {
             display: grid;
@@ -16,130 +19,146 @@
             height: 650px;
         }
         .grid-container-1{
-            background-color:whitesmoke;
             display: grid;
-            border:gainsboro 2px;
-            grid-template-columns: auto auto auto auto auto;
+            border:gainsboro 1px;
+            grid-template-columns: auto auto auto auto auto auto;
             width: 500px;
             height: 70px;
-            margin-left: 5px;
         }
         .grid-container-2{
             display: grid;
-            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-columns: auto auto auto auto auto;
 
         }
         h1{
             grid-column-start: 2;
-            grid-column-end: 6;
+            grid-column-end: 5;
         }
         .grid-item {
-            background-color:grey;
-            border: 1px solid rgba(0, 0, 0, 0.8);
+            background-color:#f2f2f2;
             padding: 20px;
             font-size: 30px;
             text-align: center;
         }
-        #img2{
+        #img1{
             width: 30px;
             height: 30px;
         }
-        #img1{
-            width: 30px;
-            height: 20px;
-        }
         #output{
-            margin-left: 580px;
+            margin-left: 480px;
+            margin-right: 600px;
             text-justify: auto;
         }
         .grid-item-so {
             background-color: white;
-            border: 1px solid rgba(0, 0, 0, 0.8);
             padding: 20px;
             font-size: 30px;
             text-align: center;
         }
-        .row{
-            margin-left: 95px;
-        }
+
         .row1{
-            margin-left: 95px;
+            width: 500px;
+        }
+        .row2{
             width: 500px;
         }
         .button
         {
-            border-radius:12px;
-            background-color:gray;
-            color: white;
+            padding: 10px 14.5px;
+            font-size: 12px;
+            font-weight: 600;
+            border: none;
+            font-family: 'Open Sans', sans-serif;
+            background-color:  transparent;
+            border: 1px solid transparent;
+            color: #aeb2b7;
         }
-        #button1{
-            width: 70px;
+        .button-1{
+            padding: 10px 14.5px;
+            font-size: 12px;
+            font-weight: 600;
+            border: none;
+            font-family: 'Open Sans', sans-serif;
+            background-color:  transparent;
+            border: 1px solid transparent;
+
+        }
+
+        p{
+            margin-right: 500px;
+            font-size: 28px;
+        }
+        #menu{
+           margin-top: 18px;
+            width: 60px;
+        }
+        h1{
+            font-size: 300%;
         }
 
     </style>
 
 </head>
 <body>
-<div class="row1" style="background-color: whitesmoke">
-    <!--row1 gom title va 2 button-->
-    <div class="grid-container-2">
-        <button id="button1" type="button"><img id="img2" src="./img/menu.png"></button>
-        <h1>Standard</h1>
-    </div>
-</div>
 <div class="container">
-    <div class="row2">
+    <div class="row1" >
+    <!--row1 gom title va 2 button-->
+        <div class="grid-container-2">
+        <a id="menu" href="#"><img src="./img/Menu.png"></a>
+        <p>Standard</p>
+        </div>
+    </div>
+        <div class="row2">
         <!--row2 chua man hinh hien thi va 2 dong hien thi ben phai-->
-
             <h1></h1>
             <h1 id="output">0</h1>
-
-
-    </div>
+        </div>
 </div>
 
 <div class="container">
-<div class="row">
-    <div class="grid-container-1">
+    <div class="row">
+        <div class="grid-container-1">
         <button class="button" type="button" >MC</button>
         <button class="button" type="button">MR</button>
-        <button class="button" type="button">M+</button>
-        <button class="button" type="button">M-</button>
-        <button class="button" type="button">MS</button>
-
+        <button class="button-1" type="button">M+</button>
+        <button class="button-1" type="button">M-</button>
+        <button class="button-1" type="button">MS</button>
+        <button class="button" type="button">M</button>
+        </div>
     </div>
 </div>
-<div class="row">
+<div class="container">
     <div class="col-md">
         <div class="grid-container">
-            <button type="button" class="grid-item">%</button>
-            <button class="grid-item"><img id="img1" src="./img/can2.png"></button>
-            <button class="grid-item">x</button>
-            <button class="grid-item">1/x</button>
-            <button class="grid-item">CE</button>
-            <button class="grid-item">C</button>
+            <button class="grid-item"><img id="img1" src="./img/phantram.png"></button>
+            <button class="grid-item"><img id="img1" src="./img/canbac2.png"></button>
+            <button class="grid-item"><img id="img1" src="./img/binhphuong.png"></button>
+            <button class="grid-item"><img id="img1" src="./img/nghichdao.png"></button>
+            <button class="grid-item"><img id="img1" src="./img/CE.png"</button>
+            <button class="grid-item"><img id="img1" src="./img/C.png"</button>
             <button class="grid-item"><img id="img1" src="./img/delete.png"></button>
-            <button class="grid-item">/</button>
-            <button class="grid-item-so">7</button>
-            <button class="grid-item-so">8</button>
-            <button class="grid-item-so">9</button>
-            <button class="grid-item">X</button>
-            <button class="grid-item-so">4</button>
-            <button class="grid-item-so">5</button>
-            <button class="grid-item-so">6</button>
-            <button class="grid-item">-</button>
-            <button class="grid-item-so">1</button>
-            <button class="grid-item-so">2</button>
-            <button class="grid-item-so">3</button>
-            <button class="grid-item">+</button>
-            <button class="grid-item">+/-</button>
-            <button class="grid-item-so">0</button>
+            <button class="grid-item"><img id="img1" src="./img/phepchia.png"></button>
+            <button class="grid-item-so"><strong>7</strong></button>
+            <button class="grid-item-so"><strong>8</strong></button>
+            <button class="grid-item-so"><strong>9</strong></button>
+            <button class="grid-item"><img id="img1" src="./img/phepnhan.png"></button>
+            <button class="grid-item-so"><strong>4</strong></button>
+            <button class="grid-item-so"><strong>5</strong></button>
+            <button class="grid-item-so"><strong>6</strong></button>
+            <button class="grid-item"><img id="img1" src="./img/dautru.png"</button>
+            <button class="grid-item-so"><strong>1</strong></button>
+            <button class="grid-item-so"><strong>2</strong></button>
+            <button class="grid-item-so"><strong>3</strong></button>
+            <button class="grid-item"><img id="img1" src="./img/daucong.png"</button>
+            <button class="grid-item"><img id="img1" src="./img/congtru.png"></button>
+            <button class="grid-item-so"><strong>0</strong></button>
             <button class="grid-item">.</button>
-            <button class="grid-item">=</button>
+            <button class="grid-item"><img id="img1" src="./img/daubang.png"</button>
         </div>
     </div>
 
 </div>
 </div>
+
 </body>
 </html>

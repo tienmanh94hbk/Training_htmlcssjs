@@ -5,9 +5,14 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="calculator.css" rel="stylesheet">
     <style>
-
-        .container{
+        .grid-item{
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
 
         }
     </style>
@@ -18,35 +23,25 @@
     <div class="col-md">
         <p>Standard</p>
     </div>
-    <div class="col-md">
-        <button class="btn btn-info">History</button>
-        <button class="btn btn-info">Memory</button>
-    </div>
 </div>
+<div class="container">
 <div class="row">
     <!--row2 chua man hinh hien thi va 2 dong hien thi ben phai-->
     <div class="col-md">
        <h1></h1>
         <h1>0</h1>
     </div>
-    <div class="col-md">
-        <p id="a1">Dong 1</p>
-        <p id="a2">Dong 2</p>
-    </div>
-</div>
-<div class="row">
-    <!--row3 chua day button M va 1 dong hien thi ben phai-->
-    <div class="col-md">
-        <button type="button" class="btn btn-info">MC</button>
-        <button type="button" class="btn btn-info">MR</button>
-        <button type="button" class="btn btn-info">M+</button>
-        <button type="button" class="btn btn-info">M-</button>
-        <button type="button" class="btn btn-info">MS</button>
 
-    </div>
-    <div class="col-md">
-        <p id="a3">Dong 3</p>
-    </div>
+</div>
+<div class="grid-container">
+    <!--row3 chua day button M va 1 dong hien thi ben phai-->
+        <div class="grid-item"><button type="button" class="btn btn-info">MC</button></div>
+        <div class="grid-item"><button type="button" class="btn btn-info">MR</button></div>
+        <div class="grid-item"><button type="button" class="btn btn-info">M+</button></div>
+        <div class="grid-item"><button type="button" class="btn btn-info">M-</button></div>
+        <div class="grid-item"><button type="button" class="btn btn-info">MS</button></div>
+
+
 </div>
 <div class="row">
     <!--row4 chua 4bt phep tinh %,V,x2,1/x  va 1 dong hien thi ben phai-->
@@ -67,9 +62,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md">
-        <p id="a4">Dong 4</p>
-    </div>
+
 </div>
 <div class="row">
     <!--row5 chua 4 bt CE,C,Delete,/  và 1 dong hien thi ben phai-->
@@ -89,32 +82,25 @@
             </div>
         </div>
     </div>
-    <div class="col-md">
-        <p id="a5">Dong 5</p>
 
-    </div>
 </div>
 <div class="row">
     <!--row6 chua4bt 7,8,9,X và 1 dong hien thi-->
-    <div class="col-md">
+    <div class="col-">
         <div class="row">
-       <div class="col-md-2">
-           <button type="button" class="btn btn-block btn-primary">7</button>
+       <div class="col-sm-3">
+          <a href="#">7</a>
        </div>
-        <div class="col-md-2">
-            <button type="button" class="btn btn-block btn-primary">8</button>
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-block btn-secondary">8</button>
         </div>
-        <div class="col-md-2">
-            <button type="button" class="btn btn-block btn-primary">9</button>
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-block btn-secondary">9</button>
         </div>
-        <div class="col-md-2">
-            <button type="button" class="btn btn-block btn-primary">X</button>
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-block btn-secondary">X</button>
         </div>
         </div>
-    </div>
-    <div class="col-md">
-        <p id=" a6">Dong 6</p>
-
     </div>
 
 </div>
@@ -137,9 +123,7 @@
        </div>
 
     </div>
-    <div class="col-md">
-        <p id="a7">Dong 7</p>
-    </div>
+
 </div>
 <div class="row">
     <!--row8 chứa 4bt 1,2,3,+ và 1 dòng hiển thị-->
@@ -161,9 +145,6 @@
 
 
     </div>
-    <div class="col-md">
-        <p id="a8">Dong 8</p>
-    </div>
 
 </div>
 <div class="row">
@@ -184,9 +165,8 @@
             </div>
         </div>
     </div>
-    <div class="col-md">
-        <p id="a9">Dong 9</p>
-    </div>
+
+</div>
 </div>
 
 

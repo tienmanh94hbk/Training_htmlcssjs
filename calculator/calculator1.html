@@ -3,100 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        .container{
-            display: grid;
-            background-color:#e9e9e9 ;
-            margin-left: 95px;
-            margin-right: 600px;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            border:2px rgba(0, 0, 0, 0.9) ;
-            padding: 5px;
-            width: 500px;
-            height: 650px;
-        }
-        .grid-container-1{
-            display: grid;
-            border:gainsboro 1px;
-            grid-template-columns: auto auto auto auto auto auto;
-            width: 500px;
-            height: 70px;
-        }
-        .grid-container-2{
-            display: grid;
-            grid-template-columns: auto auto auto auto auto;
-
-        }
-        h1{
-            grid-column-start: 2;
-            grid-column-end: 5;
-        }
-        .grid-item {
-            background-color:#f2f2f2;
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-        }
-        #img1{
-            width: 30px;
-            height: 30px;
-        }
-        #output{
-            margin-left: 480px;
-            margin-right: 600px;
-            text-justify: auto;
-        }
-        .grid-item-so {
-            background-color: white;
-            padding: 20px;
-            font-size: 30px;
-            text-align: center;
-        }
-
-        .row1{
-            width: 500px;
-        }
-        .row2{
-            width: 500px;
-        }
-        .button
-        {
-            padding: 10px 14.5px;
-            font-size: 12px;
-            font-weight: 600;
-            border: none;
-            font-family: 'Open Sans', sans-serif;
-            background-color:  transparent;
-            border: 1px solid transparent;
-            color: #aeb2b7;
-        }
-        .button-1{
-            padding: 10px 14.5px;
-            font-size: 12px;
-            font-weight: 600;
-            border: none;
-            font-family: 'Open Sans', sans-serif;
-            background-color:  transparent;
-            border: 1px solid transparent;
-
-        }
-
-        p{
-            margin-right: 500px;
-            font-size: 28px;
-        }
-        #menu{
-           margin-top: 18px;
-            width: 60px;
-        }
-        h1{
-            font-size: 300%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="calculator.css">
 
 </head>
 <body>
@@ -151,7 +58,7 @@
             <button class="grid-item-so"><strong>3</strong></button>
             <button class="grid-item"><img id="img1" src="./img/daucong.png"</button>
             <button class="grid-item"><img id="img1" src="./img/congtru.png"></button>
-            <button class="grid-item-so"><strong>0</strong></button>
+            <button class="grid-item-so" onclick='document.getElementById("output").innerHTML = "Hello JavaScript!"'><strong>0</strong></button>
             <button class="grid-item">.</button>
             <button class="grid-item"><img id="img1" src="./img/daubang.png"</button>
         </div>

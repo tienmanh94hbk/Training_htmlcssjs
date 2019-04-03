@@ -31,12 +31,11 @@ h1{
     font-size: 30px;
     text-align: center;
 }
-#img1{
+.img1{
     width: 30px;
     height: 30px;
 }
-#output{
-    left-width:500px;
+.output{
     margin-right: 600px;
     text-align: end;
 }
@@ -62,7 +61,6 @@ background-color:#e9e9e9 ;
 {
     padding: 10px 14.5px;
     font-size: 12px;
-    font-weight: 500px;
     border: none;
     font-family: 'Open Sans', sans-serif;
     background-color:  transparent;
@@ -72,7 +70,6 @@ background-color:#e9e9e9 ;
     padding: 10px 14.5px;
     font-size: 12px;
     font-weight: 600;
-    border: none;
     font-family: 'Open Sans', sans-serif;
     background-color:  transparent;
     border: 1px solid transparent;
@@ -83,11 +80,11 @@ p{
     margin-right: 490px;
     font-size: 28px;
 }
-#menu{
+.menu{
     margin-top: 18px;
     width: 60px;
 }
 h1{
-    margin-left:460px;
+    /*margin-left:460px;*/
     font-size: 300%;
 }

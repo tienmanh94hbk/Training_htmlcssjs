@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Win10</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="js/calculator1.1.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row1">
+        <!--row1 gom title va 2 button-->
+        <div class="grid-container-2">
+            <a class="menu" href="#"><img src="./img/menu.png" alt="dau menu"></a>
+            <p>Standard</p>
+        </div>
+    </div>
+    <div class="row2">
+        <!--row2 chua man hinh hien thi va 2 dong hien thi ben phai-->
+        <div class="grid-hienthi">
+            <h2 id="pheptinh"></h2>
+            <h1 class="output" id="result" >0</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="grid-container-1">
+            <button class="button" type="button">MC</button>
+            <button class="button" type="button">MR</button>
+            <button class="button-1" type="button">M+</button>
+            <button class="button-1" type="button">M-</button>
+            <button class="button-1" type="button">MS</button>
+            <button class="button" type="button">M</button>
+        </div>
+    </div>
+
+    <div class="col-md">
+        <div class="grid-container">
+            <button class="grid-item" onclick="tinhPhanTram('%')"><img class="img1" alt="dau fan tram" src="./img/phantram.PNG" ></button>
+            <button class="grid-item" onclick="tinhCanHai()"><img class="img1" alt="dau can hai" src="./img/canbac2.PNG" ></button>
+            <button class="grid-item" onclick="tinhBinhPhuong()"><img class="img1" alt="dau bac hai" src="./img/binhphuong.PNG"></button>
+            <button class="grid-item" onclick="tinhNghichDao()"><img class="img1" alt="dau ngich dao" src="./img/nghichdao.PNG"></button>
+            <button class="grid-item" onclick="clickCE()"><img class="img1" alt="dau CE" src="./img/CE.PNG"></button>
+            <button class="grid-item" onclick="clickC()"><img class="img1" alt="dau C" src="./img/C.PNG"></button>
+            <button class="grid-item" onclick="clickDauXoa()"><img class="img1" alt="dau xoa" src="./img/delete.png"></button>
+            <button class="grid-item" onclick="clickPhepTinh('/')"><img class="img1" alt="dau chia" src="./img/phepchia.PNG" ></button>
+            <button class="grid-item-so isNumber" id=" click_7" onclick="clickKyTuSo('7')"><strong>7</strong></button>
+            <button class="grid-item-so isNumber" id="click_8" onclick="clickKyTuSo('8')"><strong>8</strong></button>
+            <button class="grid-item-so isNumber" id=" click_9" onclick="clickKyTuSo('9')"><strong>9</strong></button>
+            <button class="grid-item" onclick="clickPhepTinh('*')"><img class="img1" alt="dau nhan" src="./img/phepnhan.PNG" ></button>
+            <button class="grid-item-so isNumber" id=" click_4" onclick="clickKyTuSo('4')"><strong>4</strong></button>
+            <button class="grid-item-so isNumber" id=" click_5" onclick="clickKyTuSo('5')"><strong>5</strong></button>
+            <button class="grid-item-so isNumber" id=" click_6" onclick="clickKyTuSo('6')"><strong>6</strong></button>
+            <button class="grid-item" onclick="clickPhepTinh('-')"><img class="img1" src="./img/dautru.PNG" alt="dau tru" ></button>
+            <button class="grid-item-so isNumber" id="click_1" onclick="clickKyTuSo('1')"><strong>1</strong></button>
+            <button class="grid-item-so isNumber" id=" click_2" onclick="clickKyTuSo('2')"><strong>2</strong></button>
+            <button class="grid-item-so isNumber" id=" click_3" onclick="clickKyTuSo('3')"><strong>3</strong></button>
+            <button class="grid-item" onclick="clickPhepTinh('+')"><img class="img1" src="./img/daucong.PNG" alt="dau cong" ></button>
+            <button class="grid-item" onclick="clickDauCongTru('-')"><img class="img1" src="./img/congtru.PNG" alt="dau cong tru" ></button>
+            <button class="grid-item-so" onclick="clickKyTuSo('0')"><strong>0</strong></button>
+            <button class="grid-item isNumber" onclick="clickKyTuSo('.')">.</button>
+            <button class="grid-item" onclick="clickPhepToanBang()"><img class="img1" src="./img/daubang.PNG" alt="dau bang"></button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
